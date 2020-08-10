@@ -1,0 +1,25 @@
+{
+  "name": "seat-booking-app",
+  "version": "1.0.0",
+  "description": "Seat selection and amount calculator functionality",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server --mode development"
+  },
+  "author": "Ashish Bansal (ashishbansal08@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "clean-webpack-plugin": "^2.0.0",
+    "css-loader": "^0.28.4",
+    "csv-loader": "^2.1.1",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}

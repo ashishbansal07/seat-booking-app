@@ -1,0 +1,172 @@
+body {
+    background: gray;
+}
+
+.global-container {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    margin-top: 15px;
+}
+
+.row-label, .row-seats {
+    display: inline-block;
+}
+
+#row-container {
+    margin-bottom: 10px;
+}
+
+.row-label {
+    margin-right: 24px;
+    width: 25px;
+}
+
+.group-title {
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+#group-container {
+    margin-bottom: 30px;
+}
+
+.seat-selector-container {
+    margin-bottom: 30px;
+}
+
+.seat-selector-row {
+    margin-bottom: 12px;
+}
+
+.seat-selector-row label {
+    text-align: left;
+    min-width: 250px;
+    display: inline-block;
+}
+
+.seat-selector-row select, .seat-selector-row input {
+    width: 100px;
+    height: 24px;
+    padding: 0 5px;
+}
+
+.error-block {
+    color: red;
+    background: #ff000029;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled-hall {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+#price-container {
+    text-align: right;
+}
+
+#price-container div {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#price-container button {
+    padding: 10px 38px;
+    border-radius: 5px;
+    color: white;
+    background: #b21212de;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#price-container button:disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
+
+#app {
+    margin-top: 50px;
+}
+
+.seat.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #11a9a9;
+    background-color: #11a9a9;
+    color: white;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.seat {
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 8px;
+    display: inline-block;
+    border-radius: 5px;
+    min-width: 15px;
+    border: 1px solid black;
+}
+
+.seat.hide {
+    visibility: hidden;
+}
+
+.seat.user-selection {
+    background: #1fb21f;
+    color: white;
+    border: 1px solid #1fb21f;
+}
+
+.seat.occuppied {
+    color: white;
+    background: gray;
+    pointer-events: none;
+    cursor: default;
+    border: 1px solid gray;
+}
